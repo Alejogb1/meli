@@ -1,3 +1,3 @@
 Mercado Libre React App
 
-Redux and API'S
+Redux and API's
