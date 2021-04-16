@@ -1,4 +1,4 @@
-import {FETCHING, FETCH_SUCESS, FETCH_ERROR} from "./actions/products"
+import {FETCHING, FETCH_SUCCESS, FETCH_ERROR} from "./actions/products"
 
 export const initialState = {
     fetching: true,
@@ -7,14 +7,14 @@ export const initialState = {
     error: false
 }
 
-export function productReducer(state=initialState, action) {
+export function productReducer(state = initialState, action) {
     switch (action.type) {
         case FETCHING:
             return  {
-                ...initialState,
+                ...state,
                 fetching: true
             }
-        case FETCH_SUCESS:
+        case FETCH_SUCCESS:
             return  {
                 fetching: false,
                 products: action.payload.data,

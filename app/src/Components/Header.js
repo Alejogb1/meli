@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 const Header = React.memo(({ handlerSearch }) => {
-    const history = useHistory();
+  const history = useHistory();
   const search = (e) => {
       
     e.preventDefault()
