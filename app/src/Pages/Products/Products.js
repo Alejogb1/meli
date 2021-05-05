@@ -3,6 +3,7 @@ import { propTypes } from "react-bootstrap/esm/Image"
 import { productReducer, initialState } from "./../../reducers/product";
 import { FETCHING, FETCH_SUCCESS } from "./../../reducers/actions/products";
 import {useEffect, useReducer} from "react"
+import {Link} from "react-router-dom"
 import axios from "axios"
 const Products = ({search}) => { 
     
@@ -29,7 +30,9 @@ const Products = ({search}) => {
            {
                state.products.length ? 
                state.products.map(product => (
-                   <h1>{product.title}</h1>
+                   <Link to={`/product/${product.id}`}>
+                        <button>{product.title}</button>
+                   </Link>
                ))
                : <h1>Nada</h1>
            }
