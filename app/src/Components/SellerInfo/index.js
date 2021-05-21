@@ -12,17 +12,17 @@ import {
   ClockIcon,
   More,
 } from "./style";
-const SellerInfo = () => {
+const SellerInfo = ({state, city}) => {
     return (
       <Container>
-        <Title>Informações sobre o vendedor</Title>
+        <Title>Información sobre el vendedor</Title>
   
         <LocationCard>
           <LocationIcon />
   
           <div>
-            <p>Localização</p>
-            <strong>São Paulo, São Paulo</strong>
+            <p>Ubicación</p>
+            <strong>{state}, {city}</strong>
           </div>
         </LocationCard>
   
@@ -38,24 +38,24 @@ const SellerInfo = () => {
           <ReputationRow>
             <div>
               <strong>561</strong>
-              <span>vendas nos últimos 4 meses</span>
+              <span>ventas en los últimos 4 meses</span>
             </div>
             <div>
               <strong>
                 <SupportIcon />
               </strong>
-              <span>Presta um bom atendimento</span>
+              <span>Brinda buena atención</span>
             </div>
             <div>
               <strong>
                 <ClockIcon />
               </strong>
-              <span>Entrega os produtos dentro do prazo</span>
+              <span>Despacha sus productos a tiempo</span>
             </div>
           </ReputationRow>
         </ReputationCard>
   
-        <More href="#">Ver mais dados do vendedor</More>
+        <More href="#">Ver más datos del vendedor</More>
       </Container>
     );
   };
