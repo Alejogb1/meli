@@ -1,7 +1,12 @@
-import {Container, Wrapper, Row} from "./style" 
+import {Container, Wrapper, Row,
+    Panel,
+    Column,
+    Gallery,
+    Section,
+    Description,} from "./style" 
 import {useParams} from "react-router-dom"
-import ProductAction from "../../Components/ProductAction/ProductAction";
-import SellerInfo from "../SellerInfo";
+import ProductAction from "../../Components/ProductAction/index";
+import SellerInfo from "../../Components/SellerInfo/index";
 const Product = () => {
     const {id} = useParams()
     return (
@@ -9,14 +14,14 @@ const Product = () => {
             <Wrapper>
                 <Container>
                     <Row>
-                        <a href="#">Compartir</a>
-                        <a href="#">Vender uno igual</a>
+                        <a href="#">asdad</a>
+                        <a href="#">Vendasdader uno igual</a>
                     </Row>
                 </Container>
                 <Panel>
                     <Column>
                         <Gallery>
-                            <img alt="T-Shirt" src={tshirtImage} />
+                            <img alt="T-Shirt" />
                         </Gallery>
                          <Info />
                     </Column>

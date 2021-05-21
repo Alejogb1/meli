@@ -119,7 +119,6 @@ export const Actions = styled.div`
   flex-direction: column;
 `;
 
-type ButtonProps = { solid?: boolean };
 
 export const Button = styled.button<ButtonProps>`
   display: flex;

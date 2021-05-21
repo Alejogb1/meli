@@ -16,7 +16,7 @@ import {
   Button,
   Benefits,
   ShieldIcon,
-} from "./styles";
+} from "./style";
 
 const ProductAction = () => {
   return (
