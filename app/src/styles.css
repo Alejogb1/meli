@@ -116,9 +116,9 @@
     margin-bottom: 10px;
     background:#FF7733;
     color: white    ;
-    padding: 1px 6px;
+    padding: 3px 6px;
     border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     width: fit-content;
 }
