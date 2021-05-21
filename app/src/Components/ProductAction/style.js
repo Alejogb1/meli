@@ -120,7 +120,7 @@ export const Actions = styled.div`
 `;
 
 
-export const Button = styled.button<ButtonProps>`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
