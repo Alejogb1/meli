@@ -42,7 +42,7 @@ const Products = ({search}) => {
                             </div>
                             <div className="content-wrapper">
                                 {index === 0 ? (
-                                 <div className="best-selling-tag">MÄS VENDIDO</div>
+                                 <div className="best-selling-tag">MÁS VENDIDO</div>
                                 ) : <></>}
                                 <Link className="item-link" key={product.id} to={`/product/${product.id}`}>
                                         <h2 className="item-title">{product.title}</h2>
