@@ -59,7 +59,7 @@ const Products = ({search}) => {
                     </li>
                     
                 ))
-                : <h1>No se encontraron resultados</h1>
+                : <h1>Cargando...</h1>
             }
           </ul>
         </div>

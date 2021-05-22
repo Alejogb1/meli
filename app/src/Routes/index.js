@@ -8,6 +8,9 @@ const Routes = ({handlerSearch, search}) => {
         <Router>
             <Header handlerSearch={handlerSearch}/> 
             <Switch>
+                <Route path="/" exact>
+                    <h1 style={{textAlign:"center"}}>Search for a product</h1>
+                </Route>
                 <Route path="/products">
                     <Products search={search}/>
                 </Route>
