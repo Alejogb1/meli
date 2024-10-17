@@ -9,7 +9,14 @@ const Routes = ({handlerSearch, search}) => {
             <Header handlerSearch={handlerSearch}/> 
             <Switch>
                 <Route path="/" exact>
-                    <h1 style={{textAlign:"center"}}>Search for a product</h1>
+                    <h1 style={{textAlign:"center"}}>
+                        {
+                            window.innerWidth < 768 ? 
+                            "No disponible en dispositivos moviles (<768 px)" 
+                            : 
+                            "Search for a product"
+                        }
+                    </h1>
                 </Route>
                 <Route path="/products">
                     <Products search={search}/>
